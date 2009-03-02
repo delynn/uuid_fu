@@ -21,4 +21,4 @@ module UuidFu
   end
 end
 
-ActiveRecord::ConnectionAdapters::AbstractAdapter.send(:include, Uuid::SchemaStatements)
+ActiveRecord::ConnectionAdapters::AbstractAdapter.send(:include, UuidFu::SchemaStatements)
