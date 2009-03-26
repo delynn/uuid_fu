@@ -15,12 +15,12 @@ end
 
 @gem_spec = Gem::Specification.new do |s|
   s.name = "uuid_fu"
-  s.version = "1.0.0"
-  s.summary = "uuid_fu"
-  s.description = "uuid_fu was developed by: delynn@gmail.com"
-  s.author = "delynn@gmail.com"
-  s.email = ""
-  s.homepage = ""
+  s.version = "1.0.1"
+  s.summary = "A gem that helps out with using UUIDs for primary keys in ActiveRecord objects."
+  s.description = "Developed by: delynn@gmail.com"
+  s.author = "DeLynn Berry"
+  s.email = "delynn@gmail.com"
+  s.homepage = "http://delynnberry.com"
   s.files = FileList['lib/**/*.*', 'README', 'doc/**/*.*', 'bin/**/*.*']
   s.require_paths = ['lib']
   s.extra_rdoc_files = ["README"]
