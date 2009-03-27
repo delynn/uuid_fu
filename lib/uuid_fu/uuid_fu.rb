@@ -1,3 +1,4 @@
+gem     'uuid', '=2.0.1'
 require 'uuid'
 
 if defined?(UUID) && defined?(UUID::VERSION) && UUID::VERSION == '2.0.1'
