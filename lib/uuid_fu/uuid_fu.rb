@@ -1,7 +1,10 @@
-gem     'uuid', '=2.0.1'
-require 'uuid'
+begin
+  gem     'assaf-uuid', '=2.0.1'
+  require 'uuid'
+rescue Gem::LoadError
+  raise "This plug-in is only compatible with version 2.0.1 of the following UUID gem: http://github.com/assaf/uuid"
+end
 
-if defined?(UUID) && defined?(UUID::VERSION) && UUID::VERSION == '2.0.1'
 module UuidFu
   def self.included(base)
     base.extend(ClassMethods)
@@ -64,6 +67,3 @@ module UuidFu
 end
 
 ActiveRecord::Base.send(:include, UuidFu)
-else
-  raise "This plug-in is only compatible with version 2.0.1 of the following UUID gem: http://github.com/assaf/uuid"
-end
