@@ -15,7 +15,7 @@ end
 
 @gem_spec = Gem::Specification.new do |s|
   s.name = "uuid_fu"
-  s.version = "1.0.2"
+  s.version = "1.0.3"
   s.summary = "A gem that helps out with using UUIDs for primary keys in ActiveRecord objects."
   s.description = "Developed by: delynn@gmail.com"
   s.author = "DeLynn Berry"
