@@ -9,7 +9,7 @@ module UuidFu
       def type_to_sql_with_uuid(type, limit = nil, precision = nil, scale = nil)
         case type.to_s
           when "uuid" then
-            type  = "uuid"
+            type  = "varchar(32)"
             limit = 32
           when "uuid_key" then
             type  = "varchar(32) primary key"
