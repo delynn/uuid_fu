@@ -15,7 +15,7 @@ end
 
 @gem_spec = Gem::Specification.new do |s|
   s.name = "uuid_fu"
-  s.version = "1.0.3"
+  s.version = "1.0.4"
   s.summary = "A gem that helps out with using UUIDs for primary keys in ActiveRecord objects."
   s.description = "Developed by: delynn@gmail.com"
   s.author = "DeLynn Berry"
@@ -30,13 +30,13 @@ end
   #s.bindir = "bin"
   #s.executables << "uuid_fu"
   #s.add_dependency("", "")
-  #s.add_dependency("", "")
   #s.extensions << ""
   #s.required_ruby_version = ">= 1.8.6"
   #s.default_executable = ""
   #s.platform = "Gem::Platform::Ruby"
   #s.requirements << "An ice cold beer."
   #s.requirements << "Some free time!"
+  s.add_dependency("assaf-uuid", "<=2.1.0")
 end
 
 # rake package

@@ -1,10 +1,3 @@
-begin
-  gem     'assaf-uuid', '=2.0.1'
-  require 'uuid'
-rescue Gem::LoadError
-  raise "This plug-in is only compatible with version 2.0.1 of the following UUID gem: http://github.com/assaf/uuid"
-end
-
 module UuidFu
   def self.included(base)
     base.extend(ClassMethods)
